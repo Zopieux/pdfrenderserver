@@ -1,0 +1,30 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath 'org.akhikhl.gretty:gretty:+'
+    }
+}
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+apply plugin: 'java'
+apply plugin: 'war'
+apply plugin: 'org.akhikhl.gretty'
+
+dependencies {
+    providedCompile 'javax.servlet:servlet-api:+'
+    compile 'org.jsoup:jsoup:+'
+    compile 'org.xhtmlrenderer:flying-saucer-pdf:+'
+}
+
+group 'eu.zopi'
+version '1.0'
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
