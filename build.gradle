@@ -18,13 +18,13 @@ apply plugin: 'war'
 apply plugin: 'org.akhikhl.gretty'
 
 dependencies {
-    providedCompile 'javax.servlet:servlet-api:+'
-    compile 'org.jsoup:jsoup:+'
-    compile 'org.xhtmlrenderer:flying-saucer-pdf:+'
+    providedCompile 'javax.servlet:servlet-api:2.5'
+    compile 'org.jsoup:jsoup:1.13.1'
+    compile 'org.xhtmlrenderer:flying-saucer-pdf:9.1.20'
 }
 
 group 'eu.zopi'
-version '1.0'
+version '1.1'
 
-sourceCompatibility = 1.7
-targetCompatibility = 1.7
+sourceCompatibility = 1.8
+targetCompatibility = 1.8

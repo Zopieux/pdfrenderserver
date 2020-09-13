@@ -36,8 +36,7 @@ public class ServerRenderer extends HttpServlet {
         Element tag = document.getElementsByTag("html").get(0);
         tag.before(new DocumentType("html",
                 "-//W3C//DTD XHTML 1.0 Transitional//EN",
-                "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd",
-                document.baseUri()));
+                "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"));
         document.outputSettings(new Document.OutputSettings()
                 .syntax(Document.OutputSettings.Syntax.xml)
                 .charset(StandardCharsets.UTF_8)
